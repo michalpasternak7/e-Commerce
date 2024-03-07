@@ -85,8 +85,8 @@ This notebook contains a set of queries aimed at solving specific exercises base
 
 ## superstore_eda.ipynb
 
-Exploratory Data Analysis with focus on insights relevant for e-commerce.
+This notebook focuses on the exploratory data analysis with focus on insights relevant for e-commerce.
 
 ## superstore_clustering.ipynb
 
-TODO
+In this notebook the customers get clustered by buying patterns using 3 parameters: Monetary (amount of money spent), Frequency (how frequently the customer bought something) and Recency (how many days has passed from today to their last purchase). The results are further exported to [rfm_clusters.csv](Exports/rfm_clusters.csv).
