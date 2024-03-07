@@ -4,9 +4,10 @@
 
 The project aims to create a relational database based on the contents of the provided dataset, Sample-Superstore.csv. The primary objectives include:
 
-- Designing an Entity-Relationship Diagram (ERD) to model the database schema.
-- Implementing the relational database using SQLite as the Relational Database Management System (RDBMS).
-- Conducting Exploratory Data Analysis (EDA) to gain insights into the dataset.
+- Designing an [Entity-Relationship Diagram](SuperstoreDB/superstore_erd.jpg) (ERD) to model the database schema.
+- Implementing the relational [database](SuperstoreDB/superstore.db) using SQLite as the Relational Database Management System (RDBMS).
+- Conducting [Exploratory Data Analysis](superstore_eda.ipynb) (EDA) to gain insights into the dataset.
+- [Cluster](superstore_clustering.ipynb) customers according to their buying patterns.
 
 
 ## Folder Structure
@@ -17,6 +18,7 @@ The project aims to create a relational database based on the contents of the pr
 - [superstore_db_preparation.ipynb](superstore_db_preparation.ipynb)
 - [superstore_eda.ipynb](superstore_eda.ipynb)
 - [superstore_queries.ipynb](superstore_queries.ipynb)
+- [superstore_clustering.ipynb](superstore_clustering.ipynb)
 
 **SuperstoreDB:**
     - [superstore.db](SuperstoreDB/superstore.db)
@@ -29,6 +31,13 @@ The project aims to create a relational database based on the contents of the pr
     - [Customers.csv](SuperstoreTables/Customers.csv)
     - [OrdersDetails.csv](SuperstoreTables/OrdersDetails.csv)
 
+**Exports:**
+    - [rfm_clusters.csv](Exports/rfm_clusters.csv)
+
+**Helpers:**
+    - [states_titlecase.json](Helpers/states_titlecase.json)
+
+
 ## Entity-Relationship Diagram (ERD)
 
 The ERD was created using [drawSQL](https://drawsql.app/) and is visualized in the attached image file: [superstore_erd.jpg](SuperstoreDB/superstore_erd.jpg).
@@ -39,8 +48,16 @@ The process involves transferring data from the initial CSV file to the database
 
 - Initial exploration of the Sample-Superstore.csv file to understand its structure and contents.
 - Data conversion and formatting as necessary to align with database requirements.
-- Partitioning the dataset into separate tables based on relevant topics, ensuring each table has unique primary keys and eliminating unnecessary duplicated data.
-- Saving the partitioned data as individual CSV files for convenience and later use, particularly in data visualization tools like Tableau.
+- [Partitioning the dataset into separate tables](superstore_db_preparation.ipynb) based on relevant topics, ensuring each table has unique primary keys and eliminating unnecessary duplicated data.
+- Saving the partitioned data as individual CSV files for convenience and later use.
+- [Saving the data](superstore_db_creation.ipynb) in a SQLite database.
+- Testing the database by [performing queries](superstore_db_queries.ipynb).
+
+## EDA and Clustering
+
+- Explore the e-commerce dataset focusing on orders, sales, profit, customers and typical e-commerce KPIs.
+- Cluster the customers by buying patterns using 3 parameters: Monetary (amount of money spent), Frequency (how frequently the customer bought something) and Recency (how many days has passed from today to their last purchase).
+
 
 # Notebooks Overview
 
@@ -69,3 +86,7 @@ This notebook contains a set of queries aimed at solving specific exercises base
 ## superstore_eda.ipynb
 
 Exploratory Data Analysis with focus on insights relevant for e-commerce.
+
+## superstore_clustering.ipynb
+
+TODO
