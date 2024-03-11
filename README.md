@@ -85,7 +85,7 @@ This notebook contains a set of queries aimed at solving specific exercises base
 
 ## superstore_eda.ipynb
 
-This notebook focuses on the exploratory data analysis with focus on insights relevant for e-commerce.
+This notebook focuses on the exploratory data analysis with focus on insights relevant for e-commerce. The data is visualized using plotly express.
 
 ## superstore_clustering.ipynb
 
