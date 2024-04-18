@@ -1,8 +1,8 @@
-# CA-Project-5-BI-Analysis
+# e-Commerce
 
 ## Project Overview
 
-The project aims to create a relational database based on the contents of the provided dataset, Sample-Superstore.csv. The primary objectives include:
+The project aims to create a relational database based on the contents of the provided dataset, [Sample-Superstore.csv](Sample-Superstore.csv). The primary objectives include:
 
 - Designing an [Entity-Relationship Diagram](SuperstoreDB/superstore_erd.jpg) (ERD) to model the database schema.
 - Implementing the relational [database](SuperstoreDB/superstore.db) using SQLite as the Relational Database Management System (RDBMS).
@@ -50,13 +50,13 @@ The process involves transferring data from the initial CSV file to the database
 - Data conversion and formatting as necessary to align with database requirements.
 - [Partitioning the dataset into separate tables](superstore_db_preparation.ipynb) based on relevant topics, ensuring each table has unique primary keys and eliminating unnecessary duplicated data.
 - Saving the partitioned data as individual CSV files for convenience and later use.
-- [Saving the data](superstore_db_creation.ipynb) in a SQLite database.
+- [Saving the data](superstore_db_creation.ipynb) in a [SQLite](https://www.sqlite.org/) [database](SuperstoreDB/superstore.db).
 - Testing the database by [performing queries](superstore_db_queries.ipynb).
 
 ## EDA and Clustering
 
-- Explore the e-commerce dataset focusing on orders, sales, profit, customers and typical e-commerce KPIs.
-- Cluster the customers by buying patterns using 3 parameters: Monetary (amount of money spent), Frequency (how frequently the customer bought something) and Recency (how many days has passed from today to their last purchase).
+- [Explore](superstore_eda.ipynb) the e-commerce dataset focusing on orders, sales, profit, customers and typical e-commerce KPIs.
+- [Cluster](superstore_clustering.ipynb) the customers by buying patterns using 3 parameters: Monetary (amount of money spent), Frequency (how frequently the customer bought something) and Recency (how many days has passed from today to their last purchase).
 
 
 # Notebooks Overview
